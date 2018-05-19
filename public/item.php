@@ -57,7 +57,7 @@ while($row = fetch($query)):
     <form action="">
         <div class="form-group">
         <p>
-            <input type="submit" class="btn btn-primary" value="ADD TO CART">
+            <a href="cart.php?add=<?php echo $row["product_id"]; ?>" class="btn btn-primary">ADD TO CART</a>
         </p>
         </div>
     </form>
